@@ -6,21 +6,15 @@ public class VerificadorDeIdade {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
         int idade = getIdade(scanner);
-        if (idade >= 0){
             if (idade <= 12) {
                 System.out.println("Você é uma criança!");
             } else if (idade <= 17) {
-                System.out.println("Você é um adolescente!");
             } else if (idade <= 64) {
                 System.out.println("Você é um adulto!");
             } else {
                 System.out.println("Você é um idoso!");
             }
-        } else {
-            System.out.println("Idade invalida");
-        }
 
     scanner.close();
     }
